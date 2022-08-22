@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <!--visible area and zoom level-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sorting Algorithm</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles1.css" rel="stylesheet">
+            <!--rel shows relation between current file and href-->
+    </head>
+    <header>
+        <h1 align="center">Sorting Alogrithm</h1>
+        <nav>
+            <div class="row">
+                    <!--1st division-->
+                    <!-- new array button-->
+                <div class="col gap-2 d-sm-flex" id="newArray">
+                    <buttin type="button" class="btn btn-dark newArray">New array</buttin>
+                </div>
+
+                    <!--2nd division-->
+                    <!-- input size and speed button in the same row and 3 columns-->
+                <div class="col gap-2 array-inputs" id="input">
+                    <span id="size">Size of array :
+                        <input id="arr_size" type="range" min="5" max="100" step="1" value="50">
+                    </span>
+                    <span id="speed">Sorting Speed :
+                        <input id="speed_input" type="range" min="20" max="200" stepDown="10" value="20">
+                    </span>
+                </div>
+                
+                    <!--3rd division-->
+                    <!--class attribute to point to class name in stylesheet, flex, display, small, justify-content-->
+                <div class="col gap-2 d-sm-flex justify-content-end">
+                    <!-- 3rd is the class name for calling through querySelector-->
+                    <button type="button" class="btn btn-dark bubbleSort">Bubble_Sort</button>
+                    <button type="button" class="btn btn-dark insertionSort">Insertion_Sort</button>
+                    <button type="button" class="btn btn-dark selectionSort">Selection_Sort</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <body class="bg-dark text-white">
+        <div id="bars" class="flex-container"></div>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="sorting/sorting.js"></script>
+        <script type="text/javascript" src="sorting/bubble.js"></script>
+    </body>
+</html>
